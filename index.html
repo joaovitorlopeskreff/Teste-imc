@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body id="global">
+
+
+    <section class="container-main">
+        <h1>Calculadora de IMC</h1>
+
+        <div class="text-information">
+            <div>
+                <p>
+                    <h2>IMC</h2>
+                    Menos de 18.5<br>
+                    Entre 18.5 e 24.9<br>
+                    Entre 25 e 29.9<br>
+                    Entre 30 e 34.9<br>
+                    Entre 35 e 39.9<br>
+                    Acima de de 39.9<br>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <h2>Resultado </h2>
+                    Abaixo do Peso <br>
+                    Peso normal <br>
+                    Sobrepeso <br>
+                    Obesidade grau I <br>
+                    Obesidade grau II <br>
+                    Obesidade grau III <br>
+                </p>
+            </div>
+        
+        </div>
+
+        <form action="/" class="form-imc" id="formulario">
+            <label class="config-iten" for="peso" id="label-peso">Peso (kg):</label>
+            <input class="peso config-iten config-iten-input"  id="peso" name="peso" placeholder="Ex: 90" required>
+
+            <label class="config-iten" for="altura" id="label-altura">Altura (cm):</label>
+            <input class="altura config-iten config-iten-input" id="altura" type="" name="altura" placeholder="Ex: 1.70" required>
+
+            <button class="config-iten config-iten-input botao" id="botao" type="submit">Calcular</button>
+        </form>
+        <div class="resultado" id="resultado">
+            <h3 class="resultado-h3">Seu IMC é:</h3>
+            <h4 id="resultado-h4" class="resultado-h4 resultado-cor resultado-cor-sucesso "></h4>
+        </div>
+    </section>
+    <script src="/script.js"></script>
+    
+</body>
+</html>
